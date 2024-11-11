@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo1.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#">탑</a></li>
+                <li><a href="#">아우터</a></li>
+                <li><a href="#">악서사리</a></li>
+                <li><a href="#">신발</a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <img src="images/s1.jpg" alt="">
+        </div>
+
+        <div class="contents">
+
+            <div class="box">
+                <button class="btn-notice">공지사항</button>
+                <button class="btn-gallery">갤러리</button>
+                <div class="notice">
+                    <ul>
+                        <li class="open-pop">2024학년도 저스트쇼핑몰 초특가 이벤트</li>
+                        <li>저스트쇼핑몰 수원점 Grand Open!</li>
+                        <li>선착순 20명에게만 드리는 1+1 사은품 증정</li>
+                        <li>11월 11일 빼뺴로데이 고백하세요~</li>
+                        <li>2025학년도 대입수능 합격 기원 초코파이 증정</li>
+                    </ul>
+                </div>
+
+                <ul class="gallery">
+                    <li><img src="images/g2.jpg" alt=""></li>
+                    <li><img src="images/g3.jpg" alt=""></li>
+                    <li><img src="images/g2.jpg" alt=""></li>
+                </ul>
+            </div>
+            
+            <div class="banner">
+                <img src="images/b1.jpg" alt="">
+            </div>
+            <div class="baro">
+                <img src="images/g2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="logo">
+                <img src="images/logo2.png" alt="">
+            </div>
+
+            <div class="copy">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat ullam aut libero. Quae,
+                excepturi. Asperiores, perspiciatis tempora aliquid tenetur perferendis blanditiis illum eaque sit
+                facilis nesciunt quia quis voluptates!
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pop">
+        <h1>저스트쇼핑몰 초특급 할인</h1>
+        <h3>11월 11일까찌 선착순 20명!</h3>
+        <h3>놓티지 마세요</h3>
+
+        <button class="close-pop">닫기</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+
+
+    <script>
+        var 해설 = '탈모가 될 확률'
+        var 정민 = '100%'
+        var 성민 = '900%'
+        var 용빈 = '100%'
+        var 승재 = '10%'
+        var 성찬 = '100%'
+    $(".open-pop").click(function(){
+
+        $(".pop").slideDown();
+    })
+
+    $(".close-pop").click(function(){
+        $(".pop").slideUp();
+    })
+
+        $(".gallery").hide();
+
+    $(".btn-notice").click(function(){
+        $(".gallery").hide();
+        $(".notice").show();
+    })
+
+    $(".btn-gallery").click(function(){
+        $(".notice").hide();
+        $(".gallery").show();
+    })
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
